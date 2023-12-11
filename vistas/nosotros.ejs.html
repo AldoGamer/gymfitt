@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Gimnasio Fitness</title>
+</head>
+<body>
+    
+
+    <header>
+        <div class="style">
+            <span class="eligir0">Gimnasio</span> Fitness
+         </div>
+        <nav>
+            <ul>
+                <li><a href="home.ejs.html">Inicio</a></li>
+                <li><a href="estaciones.ejs.html">Estaciones y Maquinas</a></li>
+                <li><a href="videos.ejs.html">Videos de Lecciones</a></li>
+                <li><a href="nosotros.ejs.html">!!INSCRIBETE!!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="left-container">
+            <div class="style">
+                <span class="eligir">Gimnasio</span> Ozama
+             </div>
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60539.545100024494!2d-69.86284657646425!3d18.496266975754974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89137bd03f4d%3A0xf4727664bd6199dd!2sSmart%20Fit%20Ozama!5e0!3m2!1ses!2sdo!4v1702271162124!5m2!1ses!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="style">
+                <span class="eligir">Te Gusta?</span> Inscribete Aquí
+            </div>
+
+            
+
+             <div id="album">
+                <img src="https://s3.amazonaws.com/smartsystem/pictures/7553/big/20191214_183203.jpg?1584054706" alt="Foto 1">
+                <img src="https://s3.amazonaws.com/smartsystem/pictures/7555/big/20191214_180026.jpg?1584055215" alt="Foto 2">
+                <img src="https://s3.amazonaws.com/smartsystem/pictures/7556/big/20191214_165346.jpg?1584055293" alt="Foto 1">
+                <img src="https://s3.amazonaws.com/smartsystem/pictures/7557/big/20191214_164323.jpg?1584055373" alt="Foto 2">
+                <img src="https://s3.amazonaws.com/smartsystem/pictures/7558/big/20191214_175432.jpg?1584055466" alt="Foto 1">
+                <img src="https://s3.amazonaws.com/smartsystem/pictures/7559/big/20191214_184546.jpg?1584055555" alt="Foto 2">
+                <img src="https://s3.amazonaws.com/smartsystem/pictures/7565/big/20200314_124249.jpg?1584204778" alt="Foto 1">
+                <img src="https://s3.amazonaws.com/smartsystem/pictures/7566/big/20200314_124347.jpg?1584204810" alt="Foto 2">
+            </div>
+        
+            <script src="script.js"></script>
+
+        </div>
+
+        
+
+        <div class="right-container">
+            <!-- Aquí está tu formulario -->
+            <div class="form-container">
+                <!-- ... (Tu formulario aquí) -->
+                <div class="style">
+                    <span class="eligir">Crea un</span> usuario para Inscribirte
+                 </div>
+
+                 <h4> </h4>
+
+                <form action="procesar_formulario.php" method="post">
+
+                <label for="cedula">Cedula de identidad:</label>
+                <input type="text" id="cedula" name="cedula" required>
+                <br>
+        
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+        
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+        
+                <label for="sexo">sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <br>
+        
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <br>
+        
+                <label for="numero_celular">Numero de Celular:</label>
+                <input type="text" id="numero_celular" name="numero_celular" required>
+                <br>
+        
+                <div class="checkbox-container">
+                    <input type="checkbox" id="acepto_correo" name="acepto_correo" required>
+                    <label for="acepto_correo">Acepto recibir comunicaciones de Smart Fit por e-mail</label>
+                </div>
+        
+                <div class="checkbox-container">
+                    <input type="checkbox" id="acepto_sms" name="acepto_sms" required>
+                    <label for="acepto_sms">Acepto recibir comunicaciones de Smart Fit por SMS</label>
+                </div>
+        
+                <div class="checkbox-container">
+                    <input type="checkbox" id="acepto_whatsapp" name="acepto_whatsapp" required>
+                    <label for="acepto_whatsapp">Acepto recibir comunicaciones de Smart Fit por WhatsApp</label>
+                </div>
+        
+                <button type="submit">Enviar datos</button>
+             </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <p>Derechos de autor © 2023 GP</p>
+    </footer>    
+</body>
+</html>
